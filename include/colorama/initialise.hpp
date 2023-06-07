@@ -1,4 +1,7 @@
 namespace colorama {
+#ifndef _WIN32
+inline static
+#endif
 void just_fix_windows_console(bool = false)
 #ifdef _WIN32
     ;
