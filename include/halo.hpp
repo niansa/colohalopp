@@ -57,6 +57,7 @@ public:
             settings.interval = settings.spinner.interval;
         }
     }
+    Halo() : Halo(Settings()) {}
     ~Halo() {
         if (is_running()) {
             stop();
